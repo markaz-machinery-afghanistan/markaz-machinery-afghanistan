@@ -66,8 +66,9 @@ const starter=[
 {id:'p3',name:'ماشین چاپ بسکویت',category:'نانوایی و قنادی',location:'موجود در هرات',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'عرض ۴۰ سانتی‌متر؛ برق تک‌فاز',warranty:'معلومات ضمانت را بپرسید',description:'ساخت گل‌پرور ایران، همراه با ۵ قالب. برای دریافت تصاویر بیشتر و بررسی موجودیت تماس بگیرید.'},
 {id:'p4',name:'دستگاه شرینگ',category:'بسته‌بندی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'مشخصات برق را بپرسید',warranty:'معلومات ضمانت را بپرسید',description:'برای بسته‌بندی محصولات و کارتن‌ها. مشخصات فنی، ابعاد و موجودیت پیش از خرید تأیید شود.'},
 {id:'p5',name:'پرکن نیمه‌اتومات',category:'بسته‌بندی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'ظرفیت را بپرسید',warranty:'معلومات ضمانت را بپرسید',description:'مناسب کسب‌وکارهای تولیدی؛ نوع مواد قابل پرکردن و ظرفیت دستگاه باید با فروشنده بررسی شود.'},
-{id:'p6',name:'دستگاه حکاکی لیزری',category:'تولیدی و صنعتی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'مشخصات سورس را تأیید کنید',warranty:'معلومات ضمانت را بپرسید',description:'برای حکاکی روی فلز، چوب، پلکسی و چرم؛ نوع سورس، توان و محدوده کار باید پیش از معامله تأیید شود.'}
-];
+{id:'p6',name:'دستگاه حکاکی لیزری',category:'تولیدی و صنعتی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'مشخصات سورس را تأیید کنید',warranty:'معلومات ضمانت را بپرسید',
+description:'برای حکاکی روی فلز، چوب، پلکسی و چرم؛ نوع سورس، توان و محدوده کار باید پیش از معامله تأیید شود.',image:'https://xingtahwesjtthcuxxbe.supabase.co/storage/v1/object/public/product-images/motion_photo_3462743936915369804.jpg'}
+
 let products;
 try{products=JSON.parse(localStorage.getItem('markazProducts'))||starter}catch(e){products=starter}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
