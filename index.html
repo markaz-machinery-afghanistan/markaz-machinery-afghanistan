@@ -1,341 +1,313 @@
-
 <!doctype html>
-<html lang="fa" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="مرکز ماشین‌آلات صنعتی افغانستان؛ معرفی و خریدوفروش تجهیزات صنعتی.">
-<title>مرکز ماشین‌آلات صنعتی افغانستان</title>
-<style>
-:root{--bg:#0b1118;--panel:#121c27;--gold:#d7ad55;--gold2:#f1d18a;--text:#f5f7fa;--muted:#aab6c4;--line:#293747;--green:#1fbf75}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
-a{color:inherit;text-decoration:none}
-button,input,select,textarea{font:inherit}
-button{cursor:pointer}
-.wrap{width:min(1160px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:#0b1118ed;border-bottom:1px solid var(--line)}
-.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800}
-.logo{width:46px;height:46px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:22px}
-.brand small{display:block;color:var(--muted);font-weight:400;font-size:11px}
-.navlinks{display:flex;gap:18px;color:#d6dde5;font-size:13px}
-.contact{background:var(--gold);color:#14191f;border:0;border-radius:10px;padding:9px 13px;font-weight:800}
-.hero{padding:55px 0 42px;background:radial-gradient(ellipse at 15% 15%,#25384a 0,transparent 42%),linear-gradient(120deg,#0b1118,#111c28)}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
-.eyebrow{color:var(--gold2);font-size:13px;font-weight:700}
-h1{font-size:clamp(30px,4.6vw,50px);line-height:1.5;margin:12px 0}
-h1 span{color:var(--gold)}
-.hero p{color:#bdc8d4}
-.actions{display:flex;gap:10px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);padding:10px 15px;border-radius:10px;font-weight:700;color:var(--text);background:transparent}
-.btn.gold{background:var(--gold);color:#15191e;border-color:var(--gold)}
-.hero-visual{min-height:240px;border:1px solid #344556;border-radius:22px;background:linear-gradient(145deg,#203040,#101721);display:grid;place-items:center;padding:15px}
-.machine-art{width:90%;max-width:400px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
-.stat{border:1px solid var(--line);background:#111a24;border-radius:12px;padding:10px}
-.stat b{display:block;color:var(--gold2)}
-.stat span{color:var(--muted);font-size:11px}
-section{padding:42px 0}
-.section-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:20px}
-.section-head h2{font-size:24px;margin:0}
-.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}
-.filters{display:grid;grid-template-columns:1fr 220px;gap:12px;margin-bottom:20px}
-.field{width:100%;background:#111a24;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:11px 13px;outline:none}
-.field:focus{border-color:var(--gold)}
-select option{background:#111a24}
-.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.card{background:linear-gradient(160deg,#15212e,#101720);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
-.product-art{height:180px;display:grid;place-items:center;background:radial-gradient(ellipse at center,#2c4052,#172330 65%,#121b25);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
-.product-art svg{width:140px;height:115px}
-.product-art img{width:100%;height:100%;object-fit:contain;padding:10px}
-.tag{position:absolute;top:12px;right:12px;background:#0b1118e8;border:1px solid #435365;color:var(--gold2);border-radius:7px;padding:3px 8px;font-size:11px}
-.card-body{padding:15px;display:flex;flex-direction:column;gap:8px;flex:1}
-.card h3{margin:0;font-size:17px}
-.desc{color:var(--muted);font-size:13px;margin:0}
-.specs{display:flex;gap:6px;flex-wrap:wrap}
-.spec{font-size:11px;border:1px solid #344556;border-radius:6px;padding:3px 7px;color:#c6d1dc}
-.price{color:var(--gold2);font-weight:800;margin-top:4px}
-.card-actions{display:flex;gap:8px;margin-top:8px}
-.card-actions .btn{flex:1;padding:8px 5px;font-size:12px}
-.empty{grid-column:1/-1;text-align:center;padding:35px;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}
-.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.category{border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:17px}
-.category b{display:block;margin-top:5px}
-.category span{color:var(--muted);font-size:12px}
-.notice{background:linear-gradient(110deg,#182635,#111a24);border:1px solid #354657;border-radius:18px;padding:23px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.notice h2{margin:0 0 5px;font-size:21px}
-.notice p{color:var(--muted);margin:0;font-size:13px}
-footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px}
-.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-.admin{display:none;background:#101923;border:1px solid var(--gold);border-radius:16px;padding:18px;margin-top:18px}
-.admin.open{display:block}
-.admin-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.admin textarea{min-height:70px}
-.admin-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.small{font-size:12px;color:var(--muted)}
-.delete{border-color:#793b3b;color:#ffb3b3}
-.wa-float{position:fixed;bottom:18px;left:18px;z-index:15;background:var(--green);color:white;border-radius:999px;padding:11px 16px;box-shadow:0 8px 28px #0008;font-weight:800}
-@media(max-width:800px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.categories{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.products,.filters,.stats,.admin-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.notice{align-items:flex-start;flex-direction:column}.brand{font-size:12px}.contact{font-size:11px;padding:8px}.product-art{height:190px}}
-</style>
-</head>
-<body>
-<header>
-<div class="wrap nav">
-<a class="brand" href="#"><span class="logo">صن</span><span>مرکز ماشین‌آلات صنعتی افغانستان<small>معرفی و خریدوفروش تجهیزات صنعتی</small></span></a>
-<nav class="navlinks"><a href="#products">دستگاه‌ها</a><a href="#categories">دسته‌بندی‌ها</a><a href="#about">درباره ما</a><a href="#contact">تماس</a></nav>
-<a class="contact wa-link" href="#" target="_blank" rel="noopener">تماس واتساپ</a>
-</div>
-</header>
 
-<main>
-<section class="hero">
-<div class="wrap hero-grid">
-<div>
-<div class="eyebrow">بازار تخصصی تجهیزات صنعتی</div>
-<h1>دستگاه مناسب کسب‌وکارت را <span>پیدا کن.</span></h1>
-<p>مرجعی برای معرفی ماشین‌آلات بسته‌بندی، نانوایی، قنادی و تجهیزات تولیدی در افغانستان. برای قیمت و معلومات بیشتر مستقیم تماس بگیر.</p>
-<div class="actions"><a class="btn gold" href="#products">مشاهده دستگاه‌ها</a><a class="btn wa-link" href="#" target="_blank" rel="noopener">درخواست دستگاه مورد نیاز</a></div>
-<div class="stats">
-<div class="stat"><b>افغانستان</b><span>بازار هدف</span></div>
-<div class="stat"><b>تماس مستقیم</b><span>ارتباط با فروشنده</span></div>
-<div class="stat"><b>معرفی شفاف</b><span>مشخصات دستگاه</span></div>
-</div>
-</div>
-<div class="hero-visual" aria-label="تصویر تزئینی ماشین‌آلات صنعتی">
-<svg class="machine-art" viewBox="0 0 420 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M70 215H350L328 246H91L70 215Z" fill="#0A1118" stroke="#64798C" stroke-width="3"/>
-<rect x="95" y="91" width="230" height="126" rx="9" fill="#B9C5CE" stroke="#E0B95F" stroke-width="4"/>
-<rect x="117" y="112" width="91" height="81" rx="5" fill="#26394A" stroke="#667E90" stroke-width="3"/>
-<rect x="222" y="112" width="80" height="24" rx="4" fill="#24384A"/>
-<rect x="222" y="146" width="80" height="47" rx="4" fill="#192633" stroke="#687F91" stroke-width="2"/>
-<circle cx="243" cy="159" r="5" fill="#E2B65B"/><circle cx="261" cy="159" r="5" fill="#64C49B"/>
-<path d="M143 91V64H279V91M158 64V40H265V64" stroke="#E0B95F" stroke-width="5"/>
-<path d="M110 217V240M310 217V240" stroke="#718596" stroke-width="10"/>
-<path d="M130 128H192M130 143H192M130 158H177" stroke="#D7AD55" stroke-width="4" stroke-linecap="round"/>
-</svg>
-</div>
-</div>
-</section>
-
-<section id="products">
-<div class="wrap">
-<div class="section-head"><div><h2>دستگاه‌های موجود</h2><p>برای جزئیات و قیمت از راه واتساپ تماس بگیرید.</p></div><button class="btn" id="adminToggle" type="button">مدیریت محصولات</button></div>
-<div class="filters">
-<input class="field" id="search" placeholder="جست‌وجوی نام دستگاه یا مشخصات…" aria-label="جست‌وجوی دستگاه">
-<select class="field" id="categoryFilter" aria-label="فیلتر دسته‌بندی"><option value="">همه دسته‌بندی‌ها</option><option>بسته‌بندی</option><option>نانوایی و قنادی</option><option>تولیدی و صنعتی</option></select>
-</div>
-<div class="products" id="productGrid"></div>
-
-<div class="admin" id="adminPanel">
-<h3>افزودن دستگاه جدید</h3>
-<p class="small">این نسخه محصولات را فقط در همین مرورگر ذخیره می‌کند؛ برای نمایش عمومی محصولات جدید، به پایگاه داده آنلاین نیاز است.</p>
-<form id="productForm">
-<div class="admin-grid">
-<input class="field" name="name" required placeholder="نام دستگاه">
-<select class="field" name="category" required><option value="">دسته‌بندی</option><option>بسته‌بندی</option><option>نانوایی و قنادی</option><option>تولیدی و صنعتی</option></select>
-<input class="field" name="location" placeholder="محل موجودیت؛ مثلاً هرات">
-<input class="field" name="condition" placeholder="وضعیت دستگاه">
-<input class="field" name="price" placeholder="قیمت یا قیمت توافقی">
-<input class="field" name="power" placeholder="برق یا ظرفیت">
-<input class="field" name="warranty" placeholder="ضمانت">
-<input class="field" name="image" placeholder="لینک مستقیم عکس دستگاه (اختیاری)">
-<textarea class="field" name="description" placeholder="توضیحات و مشخصات"></textarea>
-</div>
-<div class="admin-tools">
-<button class="btn gold" type="submit">ثبت دستگاه</button>
-<button class="btn" type="button" id="exportBtn">دریافت پشتیبان محصولات</button>
-<button class="btn" type="button" id="importBtn">بارگذاری پشتیبان</button>
-<input type="file" id="importFile" accept="application/json" hidden>
-</div>
-</form>
-</div>
-</div>
-</section>
-
-<section id="categories">
-<div class="wrap">
-<div class="section-head"><div><h2>دسته‌بندی دستگاه‌ها</h2><p>گروه مورد نظر را انتخاب کنید.</p></div></div>
-<div class="categories">
-<a class="category" href="#products" data-cat="بسته‌بندی"><div>📦</div><b>بسته‌بندی</b><span>شرینگ، پرکن و دستگاه‌های بسته‌بندی</span></a>
-<a class="category" href="#products" data-cat="نانوایی و قنادی"><div>🥐</div><b>نانوایی و قنادی</b><span>خمیرگیر و ماشین چاپ بسکویت</span></a>
-<a class="category" href="#products" data-cat="تولیدی و صنعتی"><div>⚙️</div><b>تولیدی و صنعتی</b><span>لیزر، حکاکی و تجهیزات کارگاهی</span></a>
-<a class="category" href="#contact"><div>🔎</div><b>درخواست دستگاه</b><span>برای یافتن دستگاه مورد نیاز تماس بگیرید</span></a>
-</div>
-</div>
-</section>
-
-<section id="about">
-<div class="wrap notice"><div><h2>دستگاه مورد نیازت را پیدا نکردی؟</h2><p>نام دستگاه، ظرفیت یا کاربرد آن را بفرست تا برای یافتن گزینه مناسب راهنمایی‌ات کنیم.</p></div><a class="btn gold wa-link" href="#" target="_blank" rel="noopener">ارسال درخواست در واتساپ</a></div>
-</section>
-
-<section id="contact">
-<div class="wrap">
-<div class="section-head"><div><h2>تماس با مرکز</h2><p>برای قیمت، مشخصات و موجودیت دستگاه‌ها تماس بگیرید.</p></div></div>
-<div class="category"><b>مرکز ماشین‌آلات صنعتی افغانستان</b><p class="small">واتساپ: 0775676741</p><a class="btn gold wa-link" href="#" target="_blank" rel="noopener">گفت‌وگو در واتساپ</a></div>
-</div>
-</section>
-</main>
-
-<footer><div class="wrap footer-row"><span><strong>مرکز ماشین‌آلات صنعتی افغانستان</strong> — معرفی دستگاه‌ها و تجهیزات صنعتی</span><span>قیمت و موجودیت هر دستگاه پیش از معامله تأیید شود.</span></div></footer>
-<a class="wa-float wa-link" href="#" target="_blank" rel="noopener">واتساپ</a>
-
-<script>
-const PHONE='93775676741';
-const starter=[
-{id:'p1',name:'دستگاه بسته‌بندی شش‌گیلاسه',category:'بسته‌بندی',location:'موجود در مزار شریف',condition:'کارکرده، حد نو',price:'قیمت توافقی',power:'برق تک‌فاز',warranty:'ضمانت کاری',description:'مناسب بسته‌بندی پاپر، پفک، آشک، تخمه و مواد پودری مانند نمک و ادویه.'},
-{
-id:'p2',
-name:'خمیرگیر ۵۰ کیلویی',
-category:'نانوایی و قنادی',
-location:'موجود در هرات',
-condition:'کارکرده',
-price:'قیمت توافقی',
-power:'ظرفیت ۵۰ کیلو',
-warranty:'ضمانت کاری',
-description:'خمیرگیر ساخت ایران؛ مناسب نانوایی‌ها، نانوایی‌های صنعتی و کارگاه‌های تولید خمیر. برای دریافت قیمت دقیق، معلومات فنی و شرایط ضمانت تماس بگیرید.',
-image:'https://xingtahwesjtthcuxxbe.supabase.co/storage/v1/object/public/product-images/motion_photo_3462743936915369804.jpg'
-}
-{id:'p3',name:'ماشین چاپ بسکویت',category:'نانوایی و قنادی',location:'موجود در هرات',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'عرض ۴۰ سانتی‌متر؛ برق تک‌فاز',warranty:'معلومات ضمانت را بپرسید',description:'ساخت گل‌پرور ایران، همراه با ۵ قالب.'},
-{id:'p4',name:'دستگاه شرینگ',category:'بسته‌بندی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'مشخصات برق را بپرسید',warranty:'معلومات ضمانت را بپرسید',description:'برای بسته‌بندی محصولات و کارتن‌ها. مشخصات فنی باید تأیید شود.'},
-{id:'p5',name:'پرکن نیمه‌اتومات',category:'بسته‌بندی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'ظرفیت را بپرسید',warranty:'معلومات ضمانت را بپرسید',description:'مناسب کسب‌وکارهای تولیدی؛ نوع مواد و ظرفیت با فروشنده بررسی شود.'},
-{id:'p6',name:'دستگاه حکاکی لیزری',category:'تولیدی و صنعتی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'مشخصات سورس را تأیید کنید',warranty:'معلومات ضمانت را بپرسید',description:'برای حکاکی روی فلز، چوب، پلکسی و چرم؛ نوع سورس، توان و محدوده کار باید پیش از معامله تأیید شود.',image:'https://xingtahwesjtthcuxxbe.supabase.co/storage/v1/object/public/product-images/motion_photo_3462743936915369804.jpg'}
-];
-
-let products;
-try{
-const saved=JSON.parse(localStorage.getItem('markazProducts'));
-products=Array.isArray(saved)?saved:starter;
-}catch(e){products=starter;}
-
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const wa=text=>'https://wa.me/'+PHONE+'?text='+encodeURIComponent(text);
-
-document.querySelectorAll('.wa-link').forEach(el=>{
-el.href=wa('سلام، از وب‌سایت مرکز ماشین‌آلات صنعتی افغانستان تماس می‌گیرم. لطفاً معلومات بیشتر بدهید.');
-});
-
-function art(){
-return `<svg viewBox="0 0 180 125" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 96H155L145 110H35L25 96Z" fill="#0C141D" stroke="#718596" stroke-width="2"/><rect x="42" y="40" width="96" height="56" rx="5" fill="#B6C2CB" stroke="#D7AD55" stroke-width="3"/><rect x="52" y="50" width="35" height="35" rx="3" fill="#263C4E" stroke="#758B9C" stroke-width="2"/><rect x="96" y="50" width="30" height="10" rx="2" fill="#283D50"/><rect x="96" y="66" width="30" height="19" rx="2" fill="#172432"/><circle cx="105" cy="73" r="2.5" fill="#D7AD55"/><circle cx="115" cy="73" r="2.5" fill="#4BC18B"/><path d="M60 40V26H120V40M70 26V17H110V26" stroke="#D7AD55" stroke-width="3"/></svg>`;
-}
-
-function render(){
-const q=document.getElementById('search').value.trim().toLowerCase();
-const cat=document.getElementById('categoryFilter').value;
-const found=products.filter(p=>(!cat||p.category===cat)&&(!q||[p.name,p.category,p.description,p.location,p.power].join(' ').toLowerCase().includes(q)));
-const grid=document.getElementById('productGrid');
-
-if(!found.length){
-grid.innerHTML='<div class="empty">دستگاهی با این مشخصات پیدا نشد. عبارت دیگری جست‌وجو کنید.</div>';
-return;
-}
-
-grid.innerHTML=found.map(p=>`
-<article class="card">
-<div class="product-art">
-${p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" onerror="this.style.display='none'">`:art()}
-<span class="tag">${esc(p.category)}</span>
-</div>
-<div class="card-body">
-<h3>${esc(p.name)}</h3>
-<p class="desc">${esc(p.description)}</p>
-<div class="specs">
-<span class="spec">📍 ${esc(p.location||'محل نامشخص')}</span>
-<span class="spec">${esc(p.condition||'وضعیت نامشخص')}</span>
-${p.power?`<span class="spec">${esc(p.power)}</span>`:''}
-</div>
-<div class="price">${esc(p.price||'قیمت توافقی')}</div>
-<div class="card-actions">
-<a class="btn gold" href="${wa('سلام، در مورد دستگاه «'+p.name+'» معلومات می‌خواهم. لطفاً قیمت، موجودیت، مشخصات و شرایط ضمانت را بفرستید.')}" target="_blank" rel="noopener">معلومات و قیمت</a>
-<button class="btn" type="button" data-details="${esc(p.id)}">جزئیات</button>
-</div>
-<button class="btn delete" style="margin-top:8px;display:none" data-delete="${esc(p.id)}" type="button">حذف از فهرست محلی</button>
-</div>
-</article>`).join('');
-
-grid.querySelectorAll('[data-details]').forEach(b=>{
-b.onclick=()=>{
-const p=products.find(x=>String(x.id)===b.dataset.details);
-if(p)alert(`${p.name}\nدسته‌بندی: ${p.category}\nمحل: ${p.location}\nوضعیت: ${p.condition}\nمشخصات: ${p.power}\nضمانت: ${p.warranty}\nقیمت: ${p.price}\n\n${p.description}`);
-};
-});
-
-grid.querySelectorAll('[data-delete]').forEach(b=>{
-b.style.display=document.getElementById('adminPanel').classList.contains('open')?'block':'none';
-b.onclick=()=>{
-if(confirm('این دستگاه از فهرست همین مرورگر حذف شود؟')){
-products=products.filter(p=>String(p.id)!==b.dataset.delete);
-save();render();
-}
-};
-});
-}
-
-function save(){
-try{localStorage.setItem('markazProducts',JSON.stringify(products));}
-catch(e){alert('ذخیره‌سازی مرورگر در دسترس نیست.');}
-}
-
-document.getElementById('search').addEventListener('input',render);
-document.getElementById('categoryFilter').addEventListener('change',render);
-
-document.querySelectorAll('[data-cat]').forEach(a=>{
-a.addEventListener('click',()=>{
-document.getElementById('categoryFilter').value=a.dataset.cat;
-render();
-});
-});
-
-document.getElementById('adminToggle').onclick=()=>{
-document.getElementById('adminPanel').classList.toggle('open');
-render();
-};
-
-document.getElementById('productForm').addEventListener('submit',e=>{
-e.preventDefault();
-const f=new FormData(e.target);
-products.unshift({
-id:'p'+Date.now(),
-name:f.get('name'),
-category:f.get('category'),
-location:f.get('location')||'محل را بپرسید',
-condition:f.get('condition')||'وضعیت را بپرسید',
-price:f.get('price')||'قیمت توافقی',
-power:f.get('power')||'',
-warranty:f.get('warranty')||'معلومات ضمانت را بپرسید',
-description:f.get('description')||'برای دریافت معلومات بیشتر تماس بگیرید.',
-image:f.get('image')||''
-});
-save();e.target.reset();render();
-alert('دستگاه در همین مرورگر ثبت شد.');
-});
-
-document.getElementById('exportBtn').onclick=()=>{
-const blob=new Blob([JSON.stringify(products,null,2)],{type:'application/json'});
-const a=document.createElement('a');
-a.href=URL.createObjectURL(blob);
-a.download='markaz-machinery-products.json';
-a.click();
-URL.revokeObjectURL(a.href);
-};
-
-document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();
-
-document.getElementById('importFile').onchange=async e=>{
-const file=e.target.files[0];
-if(!file)return;
-try{
-const data=JSON.parse(await file.text());
-if(!Array.isArray(data))throw Error();
-products=data;save();render();
-alert('پشتیبان بارگذاری شد.');
-}catch(err){alert('فایل پشتیبان معتبر نیست.');}
-e.target.value='';
-};
-
-render();
-</script>
-</body>
-</html>
+<html lang="fa" dir="rtl">  
+<head>  
+<meta charset="utf-8">  
+<meta name="viewport" content="width=device-width,initial-scale=1">  
+<meta name="description" content="مرکز ماشین‌آلات صنعتی افغانستان؛ معرفی و خریدوفروش تجهیزات صنعتی.">  
+<title>مرکز ماشین‌آلات صنعتی افغانستان</title>  
+<style>  
+:root{--bg:#0b1118;--panel:#121c27;--gold:#d7ad55;--gold2:#f1d18a;--text:#f5f7fa;--muted:#aab6c4;--line:#293747;--green:#1fbf75}  
+*{box-sizing:border-box}  
+html{scroll-behavior:smooth}  
+body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}  
+a{color:inherit;text-decoration:none}  
+button,input,select,textarea{font:inherit}  
+button{cursor:pointer}  
+.wrap{width:min(1160px,92%);margin:auto}  
+header{position:sticky;top:0;z-index:20;background:#0b1118ed;border-bottom:1px solid var(--line)}  
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:15px}  
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}  
+.logo{width:46px;height:46px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:22px}  
+.brand small{display:block;color:var(--muted);font-weight:400;font-size:11px}  
+.navlinks{display:flex;gap:18px;color:#d6dde5;font-size:13px}  
+.contact{background:var(--gold);color:#14191f;border:0;border-radius:10px;padding:9px 13px;font-weight:800}  
+.hero{padding:55px 0 42px;background:radial-gradient(ellipse at 15% 15%,#25384a 0,transparent 42%),linear-gradient(120deg,#0b1118,#111c28)}  
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}  
+.eyebrow{color:var(--gold2);font-size:13px;font-weight:700}  
+h1{font-size:clamp(30px,4.6vw,50px);line-height:1.5;margin:12px 0}  
+h1 span{color:var(--gold)}  
+.hero p{color:#bdc8d4}  
+.actions{display:flex;gap:10px;flex-wrap:wrap}  
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);padding:10px 15px;border-radius:10px;font-weight:700;color:var(--text);background:transparent}  
+.btn.gold{background:var(--gold);color:#15191e;border-color:var(--gold)}  
+.hero-visual{min-height:240px;border:1px solid #344556;border-radius:22px;background:linear-gradient(145deg,#203040,#101721);display:grid;place-items:center;padding:15px}  
+.machine-art{width:90%;max-width:400px}  
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}  
+.stat{border:1px solid var(--line);background:#111a24;border-radius:12px;padding:10px}  
+.stat b{display:block;color:var(--gold2)}  
+.stat span{color:var(--muted);font-size:11px}  
+section{padding:42px 0}  
+.section-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:20px}  
+.section-head h2{font-size:24px;margin:0}  
+.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}  
+.filters{display:grid;grid-template-columns:1fr 220px;gap:12px;margin-bottom:20px}  
+.field{width:100%;background:#111a24;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:11px 13px;outline:none}  
+.field:focus{border-color:var(--gold)}  
+select option{background:#111a24}  
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}  
+.card{background:linear-gradient(160deg,#15212e,#101720);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}  
+.product-art{height:180px;display:grid;place-items:center;background:radial-gradient(ellipse at center,#2c4052,#172330 65%,#121b25);border-bottom:1px solid var(--line);position:relative;overflow:hidden}  
+.product-art svg{width:140px;height:115px}  
+.product-art img{width:100%;height:100%;object-fit:contain;padding:10px}  
+.tag{position:absolute;top:12px;right:12px;background:#0b1118e8;border:1px solid #435365;color:var(--gold2);border-radius:7px;padding:3px 8px;font-size:11px}  
+.card-body{padding:15px;display:flex;flex-direction:column;gap:8px;flex:1}  
+.card h3{margin:0;font-size:17px}  
+.desc{color:var(--muted);font-size:13px;margin:0}  
+.specs{display:flex;gap:6px;flex-wrap:wrap}  
+.spec{font-size:11px;border:1px solid #344556;border-radius:6px;padding:3px 7px;color:#c6d1dc}  
+.price{color:var(--gold2);font-weight:800;margin-top:4px}  
+.card-actions{display:flex;gap:8px;margin-top:8px}  
+.card-actions .btn{flex:1;padding:8px 5px;font-size:12px}  
+.empty{grid-column:1/-1;text-align:center;padding:35px;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}  
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}  
+.category{border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:17px}  
+.category b{display:block;margin-top:5px}  
+.category span{color:var(--muted);font-size:12px}  
+.notice{background:linear-gradient(110deg,#182635,#111a24);border:1px solid #354657;border-radius:18px;padding:23px;display:flex;align-items:center;justify-content:space-between;gap:18px}  
+.notice h2{margin:0 0 5px;font-size:21px}  
+.notice p{color:var(--muted);margin:0;font-size:13px}  
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px}  
+.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}  
+.admin{display:none;background:#101923;border:1px solid var(--gold);border-radius:16px;padding:18px;margin-top:18px}  
+.admin.open{display:block}  
+.admin-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}  
+.admin textarea{min-height:70px}  
+.admin-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}  
+.small{font-size:12px;color:var(--muted)}  
+.delete{border-color:#793b3b;color:#ffb3b3}  
+.wa-float{position:fixed;bottom:18px;left:18px;z-index:15;background:var(--green);color:white;border-radius:999px;padding:11px 16px;box-shadow:0 8px 28px #0008;font-weight:800}  
+@media(max-width:800px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.categories{grid-template-columns:repeat(2,1fr)}}  
+@media(max-width:520px){.products,.filters,.stats,.admin-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.notice{align-items:flex-start;flex-direction:column}.brand{font-size:12px}.contact{font-size:11px;padding:8px}.product-art{height:190px}}  
+</style>  
+</head>  
+<body>  
+<header>  
+<div class="wrap nav">  
+<a class="brand" href="#"><span class="logo">صن</span><span>مرکز ماشین‌آلات صنعتی افغانستان<small>معرفی و خریدوفروش تجهیزات صنعتی</small></span></a>  
+<nav class="navlinks"><a href="#products">دستگاه‌ها</a><a href="#categories">دسته‌بندی‌ها</a><a href="#about">درباره ما</a><a href="#contact">تماس</a></nav>  
+<a class="contact wa-link" href="#" target="_blank" rel="noopener">تماس واتساپ</a>  
+</div>  
+</header>  <main>  
+<section class="hero">  
+<div class="wrap hero-grid">  
+<div>  
+<div class="eyebrow">بازار تخصصی تجهیزات صنعتی</div>  
+<h1>دستگاه مناسب کسب‌وکارت را <span>پیدا کن.</span></h1>  
+<p>مرجعی برای معرفی ماشین‌آلات بسته‌بندی، نانوایی، قنادی و تجهیزات تولیدی در افغانستان. برای قیمت و معلومات بیشتر مستقیم تماس بگیر.</p>  
+<div class="actions"><a class="btn gold" href="#products">مشاهده دستگاه‌ها</a><a class="btn wa-link" href="#" target="_blank" rel="noopener">درخواست دستگاه مورد نیاز</a></div>  
+<div class="stats">  
+<div class="stat"><b>افغانستان</b><span>بازار هدف</span></div>  
+<div class="stat"><b>تماس مستقیم</b><span>ارتباط با فروشنده</span></div>  
+<div class="stat"><b>معرفی شفاف</b><span>مشخصات دستگاه</span></div>  
+</div>  
+</div>  
+<div class="hero-visual" aria-label="تصویر تزئینی ماشین‌آلات صنعتی">  
+<svg class="machine-art" viewBox="0 0 420 280" fill="none" xmlns="http://www.w3.org/2000/svg">  
+<path d="M70 215H350L328 246H91L70 215Z" fill="#0A1118" stroke="#64798C" stroke-width="3"/>  
+<rect x="95" y="91" width="230" height="126" rx="9" fill="#B9C5CE" stroke="#E0B95F" stroke-width="4"/>  
+<rect x="117" y="112" width="91" height="81" rx="5" fill="#26394A" stroke="#667E90" stroke-width="3"/>  
+<rect x="222" y="112" width="80" height="24" rx="4" fill="#24384A"/>  
+<rect x="222" y="146" width="80" height="47" rx="4" fill="#192633" stroke="#687F91" stroke-width="2"/>  
+<circle cx="243" cy="159" r="5" fill="#E2B65B"/><circle cx="261" cy="159" r="5" fill="#64C49B"/>  
+<path d="M143 91V64H279V91M158 64V40H265V64" stroke="#E0B95F" stroke-width="5"/>  
+<path d="M110 217V240M310 217V240" stroke="#718596" stroke-width="10"/>  
+<path d="M130 128H192M130 143H192M130 158H177" stroke="#D7AD55" stroke-width="4" stroke-linecap="round"/>  
+</svg>  
+</div>  
+</div>  
+</section>  <section id="products">  
+<div class="wrap">  
+<div class="section-head"><div><h2>دستگاه‌های موجود</h2><p>برای جزئیات و قیمت از راه واتساپ تماس بگیرید.</p></div><button class="btn" id="adminToggle" type="button">مدیریت محصولات</button></div>  
+<div class="filters">  
+<input class="field" id="search" placeholder="جست‌وجوی نام دستگاه یا مشخصات…" aria-label="جست‌وجوی دستگاه">  
+<select class="field" id="categoryFilter" aria-label="فیلتر دسته‌بندی"><option value="">همه دسته‌بندی‌ها</option><option>بسته‌بندی</option><option>نانوایی و قنادی</option><option>تولیدی و صنعتی</option></select>  
+</div>  
+<div class="products" id="productGrid"></div>  <div class="admin" id="adminPanel">  
+<h3>افزودن دستگاه جدید</h3>  
+<p class="small">این نسخه محصولات را فقط در همین مرورگر ذخیره می‌کند؛ برای نمایش عمومی محصولات جدید، به پایگاه داده آنلاین نیاز است.</p>  
+<form id="productForm">  
+<div class="admin-grid">  
+<input class="field" name="name" required placeholder="نام دستگاه">  
+<select class="field" name="category" required><option value="">دسته‌بندی</option><option>بسته‌بندی</option><option>نانوایی و قنادی</option><option>تولیدی و صنعتی</option></select>  
+<input class="field" name="location" placeholder="محل موجودیت؛ مثلاً هرات">  
+<input class="field" name="condition" placeholder="وضعیت دستگاه">  
+<input class="field" name="price" placeholder="قیمت یا قیمت توافقی">  
+<input class="field" name="power" placeholder="برق یا ظرفیت">  
+<input class="field" name="warranty" placeholder="ضمانت">  
+<input class="field" name="image" placeholder="لینک مستقیم عکس دستگاه (اختیاری)">  
+<textarea class="field" name="description" placeholder="توضیحات و مشخصات"></textarea>  
+</div>  
+<div class="admin-tools">  
+<button class="btn gold" type="submit">ثبت دستگاه</button>  
+<button class="btn" type="button" id="exportBtn">دریافت پشتیبان محصولات</button>  
+<button class="btn" type="button" id="importBtn">بارگذاری پشتیبان</button>  
+<input type="file" id="importFile" accept="application/json" hidden>  
+</div>  
+</form>  
+</div>  
+</div>  
+</section>  <section id="categories">  
+<div class="wrap">  
+<div class="section-head"><div><h2>دسته‌بندی دستگاه‌ها</h2><p>گروه مورد نظر را انتخاب کنید.</p></div></div>  
+<div class="categories">  
+<a class="category" href="#products" data-cat="بسته‌بندی"><div>📦</div><b>بسته‌بندی</b><span>شرینگ، پرکن و دستگاه‌های بسته‌بندی</span></a>  
+<a class="category" href="#products" data-cat="نانوایی و قنادی"><div>🥐</div><b>نانوایی و قنادی</b><span>خمیرگیر و ماشین چاپ بسکویت</span></a>  
+<a class="category" href="#products" data-cat="تولیدی و صنعتی"><div>⚙️</div><b>تولیدی و صنعتی</b><span>لیزر، حکاکی و تجهیزات کارگاهی</span></a>  
+<a class="category" href="#contact"><div>🔎</div><b>درخواست دستگاه</b><span>برای یافتن دستگاه مورد نیاز تماس بگیرید</span></a>  
+</div>  
+</div>  
+</section>  <section id="about">  
+<div class="wrap notice"><div><h2>دستگاه مورد نیازت را پیدا نکردی؟</h2><p>نام دستگاه، ظرفیت یا کاربرد آن را بفرست تا برای یافتن گزینه مناسب راهنمایی‌ات کنیم.</p></div><a class="btn gold wa-link" href="#" target="_blank" rel="noopener">ارسال درخواست در واتساپ</a></div>  
+</section>  <section id="contact">  
+<div class="wrap">  
+<div class="section-head"><div><h2>تماس با مرکز</h2><p>برای قیمت، مشخصات و موجودیت دستگاه‌ها تماس بگیرید.</p></div></div>  
+<div class="category"><b>مرکز ماشین‌آلات صنعتی افغانستان</b><p class="small">واتساپ: 0775676741</p><a class="btn gold wa-link" href="#" target="_blank" rel="noopener">گفت‌وگو در واتساپ</a></div>  
+</div>  
+</section>  
+</main>  <footer><div class="wrap footer-row"><span><strong>مرکز ماشین‌آلات صنعتی افغانستان</strong> — معرفی دستگاه‌ها و تجهیزات صنعتی</span><span>قیمت و موجودیت هر دستگاه پیش از معامله تأیید شود.</span></div></footer>  
+<a class="wa-float wa-link" href="#" target="_blank" rel="noopener">واتساپ</a>  <script>  
+const PHONE='93775676741';  
+const starter=[  
+{id:'p1',name:'دستگاه بسته‌بندی شش‌گیلاسه',category:'بسته‌بندی',location:'موجود در مزار شریف',condition:'کارکرده، حد نو',price:'قیمت توافقی',power:'برق تک‌فاز',warranty:'ضمانت کاری',description:'مناسب بسته‌بندی پاپر، پفک، آشک، تخمه و مواد پودری مانند نمک و ادویه.'},  
+{id:'p2',name:'خمیرگیر ۵۰ کیلویی',category:'نانوایی و قنادی',location:'موجود در هرات',condition:'کارکرده',price:'قیمت توافقی',power:'ظرفیت ۵۰ کیلو',warranty:'ضمانت کاری',description:'خمیرگیر ساخت ایران؛ مناسب نانوایی‌ها و کارگاه‌های تولید خمیر.'},  
+{id:'p3',name:'ماشین چاپ بسکویت',category:'نانوایی و قنادی',location:'موجود در هرات',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'عرض ۴۰ سانتی‌متر؛ برق تک‌فاز',warranty:'معلومات ضمانت را بپرسید',description:'ساخت گل‌پرور ایران، همراه با ۵ قالب.'},  
+{id:'p4',name:'دستگاه شرینگ',category:'بسته‌بندی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'مشخصات برق را بپرسید',warranty:'معلومات ضمانت را بپرسید',description:'برای بسته‌بندی محصولات و کارتن‌ها. مشخصات فنی باید تأیید شود.'},  
+{id:'p5',name:'پرکن نیمه‌اتومات',category:'بسته‌بندی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'ظرفیت را بپرسید',warranty:'معلومات ضمانت را بپرسید',description:'مناسب کسب‌وکارهای تولیدی؛ نوع مواد و ظرفیت با فروشنده بررسی شود.'},  
+{id:'p6',name:'دستگاه حکاکی لیزری',category:'تولیدی و صنعتی',location:'محل را بپرسید',condition:'وضعیت را بپرسید',price:'قیمت توافقی',power:'مشخصات سورس را تأیید کنید',warranty:'معلومات ضمانت را بپرسید',description:'برای حکاکی روی فلز، چوب، پلکسی و چرم؛ نوع سورس، توان و محدوده کار باید پیش از معامله تأیید شود.',image:'https://xingtahwesjtthcuxxbe.supabase.co/storage/v1/object/public/product-images/motion_photo_3462743936915369804.jpg'}  
+];  
+  
+let products;  
+try{  
+const saved=JSON.parse(localStorage.getItem('markazProducts'));  
+products=Array.isArray(saved)?saved:starter;  
+}catch(e){products=starter;}  
+  
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));  
+const wa=text=>'https://wa.me/'+PHONE+'?text='+encodeURIComponent(text);  
+  
+document.querySelectorAll('.wa-link').forEach(el=>{  
+el.href=wa('سلام، از وب‌سایت مرکز ماشین‌آلات صنعتی افغانستان تماس می‌گیرم. لطفاً معلومات بیشتر بدهید.');  
+});  
+  
+function art(){  
+return `<svg viewBox="0 0 180 125" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 96H155L145 110H35L25 96Z" fill="#0C141D" stroke="#718596" stroke-width="2"/><rect x="42" y="40" width="96" height="56" rx="5" fill="#B6C2CB" stroke="#D7AD55" stroke-width="3"/><rect x="52" y="50" width="35" height="35" rx="3" fill="#263C4E" stroke="#758B9C" stroke-width="2"/><rect x="96" y="50" width="30" height="10" rx="2" fill="#283D50"/><rect x="96" y="66" width="30" height="19" rx="2" fill="#172432"/><circle cx="105" cy="73" r="2.5" fill="#D7AD55"/><circle cx="115" cy="73" r="2.5" fill="#4BC18B"/><path d="M60 40V26H120V40M70 26V17H110V26" stroke="#D7AD55" stroke-width="3"/></svg>`;  
+}  
+  
+function render(){  
+const q=document.getElementById('search').value.trim().toLowerCase();  
+const cat=document.getElementById('categoryFilter').value;  
+const found=products.filter(p=>(!cat||p.category===cat)&&(!q||[p.name,p.category,p.description,p.location,p.power].join(' ').toLowerCase().includes(q)));  
+const grid=document.getElementById('productGrid');  
+  
+if(!found.length){  
+grid.innerHTML='<div class="empty">دستگاهی با این مشخصات پیدا نشد. عبارت دیگری جست‌وجو کنید.</div>';  
+return;  
+}  
+  
+grid.innerHTML=found.map(p=>`  
+<article class="card">  
+<div class="product-art">  
+${p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" onerror="this.style.display='none'">`:art()}  
+<span class="tag">${esc(p.category)}</span>  
+</div>  
+<div class="card-body">  
+<h3>${esc(p.name)}</h3>  
+<p class="desc">${esc(p.description)}</p>  
+<div class="specs">  
+<span class="spec">📍 ${esc(p.location||'محل نامشخص')}</span>  
+<span class="spec">${esc(p.condition||'وضعیت نامشخص')}</span>  
+${p.power?`<span class="spec">${esc(p.power)}</span>`:''}  
+</div>  
+<div class="price">${esc(p.price||'قیمت توافقی')}</div>  
+<div class="card-actions">  
+<a class="btn gold" href="${wa('سلام، در مورد دستگاه «'+p.name+'» معلومات می‌خواهم. لطفاً قیمت، موجودیت، مشخصات و شرایط ضمانت را بفرستید.')}" target="_blank" rel="noopener">معلومات و قیمت</a>  
+<button class="btn" type="button" data-details="${esc(p.id)}">جزئیات</button>  
+</div>  
+<button class="btn delete" style="margin-top:8px;display:none" data-delete="${esc(p.id)}" type="button">حذف از فهرست محلی</button>  
+</div>  
+</article>`).join('');  
+  
+grid.querySelectorAll('[data-details]').forEach(b=>{  
+b.onclick=()=>{  
+const p=products.find(x=>String(x.id)===b.dataset.details);  
+if(p)alert(`${p.name}\nدسته‌بندی: ${p.category}\nمحل: ${p.location}\nوضعیت: ${p.condition}\nمشخصات: ${p.power}\nضمانت: ${p.warranty}\nقیمت: ${p.price}\n\n${p.description}`);  
+};  
+});  
+  
+grid.querySelectorAll('[data-delete]').forEach(b=>{  
+b.style.display=document.getElementById('adminPanel').classList.contains('open')?'block':'none';  
+b.onclick=()=>{  
+if(confirm('این دستگاه از فهرست همین مرورگر حذف شود؟')){  
+products=products.filter(p=>String(p.id)!==b.dataset.delete);  
+save();render();  
+}  
+};  
+});  
+}  
+  
+function save(){  
+try{localStorage.setItem('markazProducts',JSON.stringify(products));}  
+catch(e){alert('ذخیره‌سازی مرورگر در دسترس نیست.');}  
+}  
+  
+document.getElementById('search').addEventListener('input',render);  
+document.getElementById('categoryFilter').addEventListener('change',render);  
+  
+document.querySelectorAll('[data-cat]').forEach(a=>{  
+a.addEventListener('click',()=>{  
+document.getElementById('categoryFilter').value=a.dataset.cat;  
+render();  
+});  
+});  
+  
+document.getElementById('adminToggle').onclick=()=>{  
+document.getElementById('adminPanel').classList.toggle('open');  
+render();  
+};  
+  
+document.getElementById('productForm').addEventListener('submit',e=>{  
+e.preventDefault();  
+const f=new FormData(e.target);  
+products.unshift({  
+id:'p'+Date.now(),  
+name:f.get('name'),  
+category:f.get('category'),  
+location:f.get('location')||'محل را بپرسید',  
+condition:f.get('condition')||'وضعیت را بپرسید',  
+price:f.get('price')||'قیمت توافقی',  
+power:f.get('power')||'',  
+warranty:f.get('warranty')||'معلومات ضمانت را بپرسید',  
+description:f.get('description')||'برای دریافت معلومات بیشتر تماس بگیرید.',  
+image:f.get('image')||''  
+});  
+save();e.target.reset();render();  
+alert('دستگاه در همین مرورگر ثبت شد.');  
+});  
+  
+document.getElementById('exportBtn').onclick=()=>{  
+const blob=new Blob([JSON.stringify(products,null,2)],{type:'application/json'});  
+const a=document.createElement('a');  
+a.href=URL.createObjectURL(blob);  
+a.download='markaz-machinery-products.json';  
+a.click();  
+URL.revokeObjectURL(a.href);  
+};  
+  
+document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();  
+  
+document.getElementById('importFile').onchange=async e=>{  
+const file=e.target.files[0];  
+if(!file)return;  
+try{  
+const data=JSON.parse(await file.text());  
+if(!Array.isArray(data))throw Error();  
+products=data;save();render();  
+alert('پشتیبان بارگذاری شد.');  
+}catch(err){alert('فایل پشتیبان معتبر نیست.');}  
+e.target.value='';  
+};  
+  
+render();  
+</script>  </body>  
+</html>  
