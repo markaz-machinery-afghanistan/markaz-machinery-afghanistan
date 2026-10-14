@@ -90,4 +90,4 @@ document.getElementById('importBtn').onclick=()=>document.getElementById('import
 document.getElementById('importFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{const data=JSON.parse(await file.text());if(!Array.isArray(data))throw Error();products=data;save();render();alert('پشتیبان بارگذاری شد.')}catch(err){alert('فایل پشتیبان معتبر نیست.')}e.target.value=''};
 render();
 </script>
-</body></html>
+</body></html> 
